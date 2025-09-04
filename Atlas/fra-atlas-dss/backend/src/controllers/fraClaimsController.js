@@ -6,6 +6,7 @@ exports.getAllFraClaims = async (req, res) => {
         const claims = await db.query('SELECT * FROM fra_claims');
         res.status(200).json(claims.rows);
     } catch (error) {
+        console.error("Error fetching FRA claims:", error);
         res.status(500).json({ error: 'Failed to retrieve FRA claims' });
     }
 };
@@ -20,6 +21,7 @@ exports.getFraClaimById = async (req, res) => {
         }
         res.status(200).json(claim.rows[0]);
     } catch (error) {
+        console.error("Error fetching FRA claim by ID:", error);
         res.status(500).json({ error: 'Failed to retrieve FRA claim' });
     }
 };
@@ -34,6 +36,7 @@ exports.createFraClaim = async (req, res) => {
         );
         res.status(201).json(newClaim.rows[0]);
     } catch (error) {
+        console.error("Error creating FRA claim:", error);
         res.status(500).json({ error: 'Failed to create FRA claim' });
     }
 };
@@ -52,6 +55,7 @@ exports.updateFraClaim = async (req, res) => {
         }
         res.status(200).json(updatedClaim.rows[0]);
     } catch (error) {
+        console.error("Error updating FRA claim:", error);
         res.status(500).json({ error: 'Failed to update FRA claim' });
     }
 };
@@ -66,6 +70,7 @@ exports.deleteFraClaim = async (req, res) => {
         }
         res.status(204).send();
     } catch (error) {
+        console.error("Error deleting FRA claim:", error);
         res.status(500).json({ error: 'Failed to delete FRA claim' });
     }
 };
