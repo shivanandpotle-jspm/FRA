@@ -1,0 +1,47 @@
+[
+    {
+        "claimant_name": "John Doe",
+        "village": "Village A",
+        "district": "District X",
+        "state": "State Y",
+        "type_of_claim": "IFR",
+        "claim_status": "Approved",
+        "area_hectares": 5.0
+    },
+    {
+        "claimant_name": "Jane Smith",
+        "village": "Village B",
+        "district": "District X",
+        "state": "State Y",
+        "type_of_claim": "CR",
+        "claim_status": "Pending",
+        "area_hectares": 10.0
+    },
+    {
+        "claimant_name": "Alice Johnson",
+        "village": "Village C",
+        "district": "District Z",
+        "state": "State Y",
+        "type_of_claim": "CFR",
+        "claim_status": "Filed",
+        "area_hectares": 15.0
+    },
+    {
+        "claimant_name": "Bob Brown",
+        "village": "Village D",
+        "district": "District Z",
+        "state": "State Y",
+        "type_of_claim": "IFR",
+        "claim_status": "Approved",
+        "area_hectares": 8.0
+    },
+    {
+        "claimant_name": "Charlie Davis",
+        "village": "Village E",
+        "district": "District X",
+        "state": "State Y",
+        "type_of_claim": "CR",
+        "claim_status": "Rejected",
+        "area_hectares": 12.0
+    }
+]

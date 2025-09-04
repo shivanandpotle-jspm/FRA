@@ -1,0 +1,24 @@
+{
+  "name": "fra-atlas-dss",
+  "version": "1.0.0",
+  "description": "AI-powered FRA Atlas and WebGIS-based Decision Support System for Integrated Monitoring of Forest Rights Act Implementation.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.6.5",
+    "cors": "^2.8.5",
+    "body-parser": "^1.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

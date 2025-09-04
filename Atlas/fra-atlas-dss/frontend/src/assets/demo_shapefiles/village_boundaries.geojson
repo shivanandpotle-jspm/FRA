@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "village_name": "Village A",
+        "district": "District 1",
+        "state": "State X"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.123456, 20.123456],
+            [78.123456, 20.234567],
+            [78.234567, 20.234567],
+            [78.234567, 20.123456],
+            [78.123456, 20.123456]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village_name": "Village B",
+        "district": "District 1",
+        "state": "State X"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.345678, 20.345678],
+            [78.345678, 20.456789],
+            [78.456789, 20.456789],
+            [78.456789, 20.345678],
+            [78.345678, 20.345678]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "village_name": "Village C",
+        "district": "District 2",
+        "state": "State Y"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.567890, 20.567890],
+            [78.567890, 20.678901],
+            [78.678901, 20.678901],
+            [78.678901, 20.567890],
+            [78.567890, 20.567890]
+          ]
+        ]
+      }
+    }
+  ]
+}

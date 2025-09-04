@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1,
+        "classification": "Agricultural Field",
+        "area_hectares": 10,
+        "status": "Approved"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.123456, 20.123456],
+            [78.123456, 20.223456],
+            [78.223456, 20.223456],
+            [78.223456, 20.123456],
+            [78.123456, 20.123456]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2,
+        "classification": "Forest Cover",
+        "area_hectares": 25,
+        "status": "Pending"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.223456, 20.123456],
+            [78.223456, 20.323456],
+            [78.323456, 20.323456],
+            [78.323456, 20.123456],
+            [78.223456, 20.123456]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3,
+        "classification": "Water Body",
+        "area_hectares": 5,
+        "status": "Approved"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.323456, 20.123456],
+            [78.323456, 20.173456],
+            [78.373456, 20.173456],
+            [78.373456, 20.123456],
+            [78.323456, 20.123456]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "classification": "Settlement",
+        "area_hectares": 15,
+        "status": "Approved"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.373456, 20.123456],
+            [78.373456, 20.223456],
+            [78.473456, 20.223456],
+            [78.473456, 20.123456],
+            [78.373456, 20.123456]
+          ]
+        ]
+      }
+    }
+  ]
+}

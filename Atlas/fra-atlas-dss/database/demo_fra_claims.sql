@@ -1,0 +1,11 @@
+INSERT INTO fra_claims (claimant_name, village, district, state, claim_type, claim_status, area_hectares) VALUES
+('John Doe', 'Village A', 'District X', 'State Y', 'IFR', 'Approved', 2.5),
+('Jane Smith', 'Village B', 'District Y', 'State Z', 'CR', 'Pending', 1.0),
+('Alice Johnson', 'Village C', 'District X', 'State Y', 'CFR', 'Filed', 3.0),
+('Bob Brown', 'Village D', 'District Z', 'State Y', 'IFR', 'Approved', 4.2),
+('Charlie Davis', 'Village E', 'District X', 'State Z', 'CR', 'Rejected', 0.5),
+('Eve White', 'Village F', 'District Y', 'State Y', 'CFR', 'Pending', 1.8),
+('Frank Black', 'Village G', 'District Z', 'State Z', 'IFR', 'Filed', 2.0),
+('Grace Green', 'Village H', 'District X', 'State Y', 'CR', 'Approved', 3.5),
+('Hank Blue', 'Village I', 'District Y', 'State Z', 'CFR', 'Pending', 2.1),
+('Ivy Red', 'Village J', 'District Z', 'State Y', 'IFR', 'Approved', 5.0);

@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sample Forest Cover Area",
+        "description": "This area represents forest cover as part of the FRA Atlas."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.9629, 20.5937],
+            [78.9629, 21.5937],
+            [79.9629, 21.5937],
+            [79.9629, 20.5937],
+            [78.9629, 20.5937]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sample Forest Cover Area 2",
+        "description": "This area represents another forest cover region."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.1234, 20.5678],
+            [78.1234, 21.5678],
+            [79.1234, 21.5678],
+            [79.1234, 20.5678],
+            [78.1234, 20.5678]
+          ]
+        ]
+      }
+    }
+  ]
+}

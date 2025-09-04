@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "claimant_name": "John Doe",
+        "village": "Sample Village",
+        "district": "Sample District",
+        "state": "Sample State",
+        "type_of_claim": "IFR",
+        "claim_status": "Approved",
+        "area_hectares": 5.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.123456, 20.123456],
+            [78.123456, 20.223456],
+            [78.223456, 20.223456],
+            [78.223456, 20.123456],
+            [78.123456, 20.123456]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "claimant_name": "Jane Smith",
+        "village": "Another Village",
+        "district": "Another District",
+        "state": "Another State",
+        "type_of_claim": "CR",
+        "claim_status": "Pending",
+        "area_hectares": 10.0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [78.223456, 20.223456],
+            [78.223456, 20.323456],
+            [78.323456, 20.323456],
+            [78.323456, 20.223456],
+            [78.223456, 20.223456]
+          ]
+        ]
+      }
+    }
+  ]
+}
