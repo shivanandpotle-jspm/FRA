@@ -1,44 +1,28 @@
-const { Pool } = require('pg');
+const { Pool } = require("pg");
 
 // PostgreSQL connection configuration
 const pool = new Pool({
-    user: process.env.DB_USER,
-    host: process.env.DB_HOST,
-    database: process.env.DB_NAME,
-    password: process.env.DB_PASSWORD,
-    port: process.env.DB_PORT,
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
 });
 
-// Function to connect to the database
-const connectDB = async () => {
-    try {
-        await pool.connect();
-        console.log('Connected to the database successfully');
-    } catch (err) {
-        console.error('Database connection error:', err);
-        throw err;
-    }
-};
+// Test connection once
+pool.connect()
+  .then(() => console.log("Connected to the database successfully"))
+  .catch((err) => console.error("Database connection error:", err));
 
-// Function to execute a query
-const executeQuery = async (query, params) => {
-    try {
-        const res = await pool.query(query, params);
-        return res.rows;
-    } catch (err) {
-        console.error('Query execution error:', err);
-        throw err;
-    }
-};
-
-// Function to close the database connection
-const closeDB = async () => {
-    await pool.end();
-    console.log('Database connection closed');
-};
+/**
+ * Run a query
+ * @param {string} text - SQL query
+ * @param {Array} params - Query parameters
+ * @returns {Promise} Query result
+ */
+const query = (text, params) => pool.query(text, params);
 
 module.exports = {
-    connectDB,
-    executeQuery,
-    closeDB,
+  query,
+  pool, // export in case you need raw pool
 };
