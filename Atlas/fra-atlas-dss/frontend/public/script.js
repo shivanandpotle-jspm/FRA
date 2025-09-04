@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const statusMessage = document.getElementById('status-message');
     const tableHead = document.getElementById('table-head');
     const tableBody = document.getElementById('table-body');
+    const submitButton = uploadForm.querySelector('button[type="submit"]'); // Get the submit button
     
     // --- FIX: Use a relative path for the API URL ---
     // This allows the frontend to call the backend on the same domain,
@@ -137,6 +138,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         statusMessage.textContent = 'Uploading and processing...';
         statusMessage.className = 'text-blue-600';
+        submitButton.disabled = true; // Disable button on submit
+        submitButton.textContent = 'Processing...';
 
         try {
             const response = await fetch(`${API_URL}/upload`, {
@@ -159,6 +162,9 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Upload error:', error);
             statusMessage.textContent = `Error: ${error.message}`;
             statusMessage.className = 'text-red-600';
+        } finally {
+            submitButton.disabled = false; // Re-enable button after completion
+            submitButton.textContent = 'Upload and Visualize';
         }
     });
 
