@@ -1,20 +1,15 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const fraClaimsController = require('../controllers/fraClaimsController');
+const fraClaimsController = require("../controllers/fraClaimsController");
 
-// Route to get all FRA claims
-router.get('/', fraClaimsController.getAllClaims);
+// Debug log to check controller functions
+console.log("fraClaimsController:", fraClaimsController);
 
-// Route to get a specific FRA claim by ID
-router.get('/:id', fraClaimsController.getClaimById);
-
-// Route to create a new FRA claim
-router.post('/', fraClaimsController.createClaim);
-
-// Route to update an existing FRA claim
-router.put('/:id', fraClaimsController.updateClaim);
-
-// Route to delete a FRA claim
-router.delete('/:id', fraClaimsController.deleteClaim);
+// Routes mapping
+router.get("/claims", fraClaimsController.getAllFraClaims);
+router.get("/claims/:id", fraClaimsController.getFraClaimById);
+router.post("/claims", fraClaimsController.createFraClaim);
+router.put("/claims/:id", fraClaimsController.updateFraClaim);
+router.delete("/claims/:id", fraClaimsController.deleteFraClaim);
 
 module.exports = router;
